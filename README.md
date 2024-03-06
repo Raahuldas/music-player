@@ -1,8 +1,10 @@
-# React + Vite
+# r-Music player using react and spotify API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Created a music player using react-js and spotify API. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features:- 
+    - search music of your choice.
+    - play/pause music 
+    - navigate on previous or next songs.
+    - directly play music from library of songs.
+    - skip to the favourite part of your song by changing seek bar.
