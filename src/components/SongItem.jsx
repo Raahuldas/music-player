@@ -19,6 +19,13 @@ function SongItem({
       setIsPlaying(true);
     }
   };
+
+  function format(mSec) {
+    let min = Math.floor(mSec/1000 / 60);
+    let seconds = Math.floor(mSec/1000 % 60);
+    return min + ":" + seconds;
+  }
+
   return (
     <div className="song bg-danger row rounded my-1 border border-2 border-danger">
       <div className="col-2 p-1 my-auto">
@@ -30,7 +37,7 @@ function SongItem({
           <span className="artists pe-1">{item.album.artists[0].name}</span>-
           <span className="album ps-1">{item.album.name}</span>
         </div>
-        <div className="time fw-medium ms-1">3:13</div>
+        <div className="time fw-medium ms-1">{format(item.duration_ms)}</div>
       </div>
       <div className="col-2 my-auto ">
         <div
